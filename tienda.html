@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tienda - AlmagaraBooks</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="fotos/almagaraBooks.png" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <!-- CABECERA (Idéntica a Index - Sticky) -->
+    <header>
+      <div class="header-container">
+        <div class="brand-name">AlmagaraBooks</div>
+        <div class="nav-capsule">
+          <form class="search-box">
+            <input type="text" class="search-input" placeholder="Buscador" />
+            <i class="fas fa-search search-icon"></i>
+          </form>
+          <nav class="nav-buttons">
+            <a href="index.html" class="nav-btn">Tu Librería</a>
+            <a href="tienda.html" class="nav-btn">Compra On-Line</a>
+            <a href="#" class="nav-btn">Contacto</a>
+          </nav>
+        </div>
+        <!-- Derecha: Logo -->
+        <div class="logo-circle">
+          <img width="50px" src="fotos/almagaraBooks.png" alt="AlmagaraBooks">
+        </div>
+      </div>
+    </header>
+
+    <!-- MAIN SHOP LAYOUT -->
+    <main>
+      <div class="shop-layout">
+        <!-- Sidebar Categorías (Bloque Rojo) -->
+        <aside class="sidebar content-block" style="padding: 20px">
+          <h3 class="cat-title">Categorías</h3>
+          <div
+            class="cat-list"
+            style="display: flex; flex-direction: column; gap: 10px"
+          >
+            <!-- Botones con Checkbox simulado -->
+            <button class="cat-btn active">
+              <span class="cat-checkbox"></span> Todos los productos
+            </button>
+            <button class="cat-btn">
+              <span class="cat-checkbox"></span> Menos de 25€
+            </button>
+            <button class="cat-btn">
+              <span class="cat-checkbox"></span> Más de 25€
+            </button>
+            <button class="cat-btn">
+              <span class="cat-checkbox"></span> Bolsas
+            </button>
+            <button class="cat-btn">
+              <span class="cat-checkbox"></span> Libros
+            </button>
+            <button class="cat-btn">
+              <span class="cat-checkbox"></span> Otros
+            </button>
+          </div>
+        </aside>
+
+        <!-- Grid Productos (Scroll Vertical) -->
+        <section class="shop-grid-container content-block">
+          <div class="shop-grid">
+            <!-- Lote 1 -->
+            <article class="card">
+              <img
+                src="fotos/libro1.png"
+                alt="Libro 1"
+              />
+              <div class="card-title">Ciudad de Hueso</div>
+              <div class="card-price-row">
+                <span class="price">15€</span>
+                <button class="btn-buy">Comprar</button>
+              </div>
+            </article>
+            <article class="card">
+              <img
+                src="fotos/libro2.png"
+                alt="Libro 2"
+              />
+              <div class="card-title">Ciudad de Ceniza</div>
+              <div class="card-price-row">
+                <span class="price">20€</span>
+                <button class="btn-buy">Oferta</button>
+              </div>
+            </article>
+            <article class="card">
+              <img
+                src="fotos/libro3.png"
+                alt="Libro 3"
+              />
+              <div class="card-title">Ciudad de los Ángeles Caídos</div>
+              <div class="card-price-row">
+                <span class="price">25€</span>
+                <button class="btn-buy">Comprar</button>
+              </div>
+            </article>
+
+            <!-- Lote 2 -->
+            <article class="card">
+              <img
+                src="fotos/libro1.png"
+                alt="Libro 1"
+              />
+              <div class="card-title">Ciudad de Hueso</div>
+              <div class="card-price-row">
+                <span class="price">15€</span>
+                <button class="btn-buy">Comprar</button>
+              </div>
+            </article>
+            <article class="card">
+              <img
+                src="fotos/libro2.png"
+                alt="Libro 2"
+              />
+              <div class="card-title">Ciudad de Ceniza</div>
+              <div class="card-price-row">
+                <span class="price">20€</span>
+                <button class="btn-buy">Oferta</button>
+              </div>
+            </article>
+            <article class="card">
+              <img
+                src="fotos/libro3.png"
+                alt="Libro 3"
+              />
+              <div class="card-title">Ciudad de los Ángeles Caídos</div>
+              <div class="card-price-row">
+                <span class="price">25€</span>
+                <button class="btn-buy">Comprar</button>
+              </div>
+            </article>
+
+            <!-- Lote 3 -->
+            <article class="card">
+              <img
+                src="fotos/libro1.png"
+                alt="Libro 1"
+              />
+              <div class="card-title">Ciudad de Hueso</div>
+              <div class="card-price-row">
+                <span class="price">15€</span>
+                <button class="btn-buy">Comprar</button>
+              </div>
+            </article>
+            <article class="card">
+              <img
+                src="fotos/libro2.png"
+                alt="Libro 2"
+              />
+              <div class="card-title">Ciudad de Ceniza</div>
+              <div class="card-price-row">
+                <span class="price">20€</span>
+                <button class="btn-buy">Oferta</button>
+              </div>
+            </article>
+            <article class="card">
+              <img
+                src="fotos/libro3.png"
+                alt="Libro 3"
+              />
+              <div class="card-title">Ciudad de los Ángeles Caídos</div>
+              <div class="card-price-row">
+                <span class="price">25€</span>
+                <button class="btn-buy">Comprar</button>
+              </div>
+            </article>
+
+            <!-- Lote 4 -->
+            <article class="card">
+              <img
+                src="fotos/libro1.png"
+                alt="Libro 1"
+              />
+              <div class="card-title">Ciudad de Hueso</div>
+              <div class="card-price-row">
+                <span class="price">15€</span>
+                <button class="btn-buy">Comprar</button>
+              </div>
+            </article>
+            <article class="card">
+              <img
+                src="fotos/libro2.png"
+                alt="Libro 2"
+              />
+              <div class="card-title">Ciudad de Ceniza</div>
+              <div class="card-price-row">
+                <span class="price">20€</span>
+                <button class="btn-buy">Oferta</button>
+              </div>
+            </article>
+            <article class="card">
+              <img
+                src="fotos/libro3.png"
+                alt="Libro 3"
+              />
+              <div class="card-title">Ciudad de los Ángeles Caídos</div>
+              <div class="card-price-row">
+                <span class="price">25€</span>
+                <button class="btn-buy">Comprar</button>
+              </div>
+            </article>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <!-- FOOTER (Idéntico) -->
+    <footer class="footer-bar">
+      <div class="footer-inner">
+        <div class="social-icons-footer">
+          <i class="fab fa-whatsapp"></i>
+          <i class="fab fa-linkedin"></i>
+          <i class="fab fa-twitter"></i>
+          <i class="fab fa-facebook"></i>
+          <i class="fab fa-instagram"></i>
+          <i class="fab fa-tiktok"></i>
+        </div>
+        <div class="footer-center">Política de Privacidad | Cookies</div>
+        <div class="footer-right">
+          Fco. Javier Fdez <i class="fas fa-copyright"></i>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
