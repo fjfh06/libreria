@@ -486,54 +486,69 @@ main {
 /* =========================================
    MEDIA QUERIES (DESKTOP FIRST)
    ========================================= */
+   
 
-/* TABLET (Max-width: 1024px) */
+/* ============================= */
+/* TABLET (Max-width: 1024px)   */
+/* ============================= */
 @media screen and (max-width: 1024px) {
-  /* Common Header Reductions */
+
+  /* --- HEADER: Ajustes generales del header en tablet --- */
   header {
-    padding: 10px 0;
+    padding: 10px 0; /* Reduce el padding vertical */
   }
+
   .header-container {
-    gap: 10px;
+    gap: 10px; /* Menor separación entre elementos del header */
   }
+
   .nav-capsule {
-    padding: 10px 20px;
+    padding: 10px 20px; /* Reduce el tamaño del contenedor de navegación */
     gap: 8px;
   }
+
   .brand-name {
-    font-size: 1.5rem;
-  }
-  .logo-circle {
-    width: 50px;
-    height: 50px;
+    font-size: 1.5rem; /* Reduce el tamaño del nombre de la marca */
   }
 
-  /* Shop Tablet Layout overrides */
+  .logo-circle {
+    width: 50px;
+    height: 50px; /* Logo más pequeño para tablet */
+  }
+
+  /* --- TABLET MEDIA (entre 601px y 1024px) --- */
   @media (min-width: 601px) {
+
+    /* Distribuye el header dejando espacio entre logo y navegación */
     .header-container {
       justify-content: space-between;
     }
 
+    /* Coloca la barra de navegación en columna (botones abajo) */
     .nav-capsule {
       margin: 0 10px;
-      flex-direction: column-reverse; /* Search below nav */
+      flex-direction: column-reverse;
     }
 
+    /* Centra el texto del buscador y le hace ocupar todo el ancho */
     .search-input {
       text-align: center;
       width: 100%;
     }
+
+    /* Ajusta la posición del icono de busqueda */
     .search-icon {
       right: 20px;
     }
 
-    /* Shop Layout: Vertical Stack but with Grid Columns */
+    /* Layout de la tienda en columna (sidebar arriba, grid abajo) */
     .shop-layout {
       flex-direction: column;
-      height: 750px; /* Internal Scroll maintained */
+      height: 750px;
       gap: 20px;
     }
 
+    /* Sidebar en fila, con botones distribuidos y centrados */
     .sidebar {
       width: 100%;
       flex-direction: row;
@@ -543,6 +558,7 @@ main {
       flex-shrink: 0;
     }
 
+    /* Botones de categoría con ancho flexible */
     .cat-btn {
       width: auto;
       min-width: 150px;
@@ -550,10 +566,12 @@ main {
       justify-content: center;
     }
 
+    /* Espaciado interno del contenedor del grid */
     .shop-grid-container {
       padding: 20px;
     }
 
+    /* Grid de productos en 2 columnas */
     .shop-grid {
       grid-template-columns: repeat(2, 1fr);
       gap: 30px;
@@ -563,17 +581,22 @@ main {
   }
 }
 
-/* MOBILE (Max-width: 600px) */
+/* ============================= */
+/* MOVIL (Max-width: 600px)     */
+/* ============================= */
 @media screen and (max-width: 600px) {
-  /* Header Vertical Stack */
+
+  /* Añade espacio inferior al header */
   header {
     margin-bottom: 20px;
   }
 
+  /* Header en columna (logo, menú y navegación apilados) */
   .header-container {
     flex-direction: column;
   }
 
+  /* Botón hamburguesa visible y centrado */
   .menu-toggle {
     display: block;
     order: 1;
@@ -581,6 +604,7 @@ main {
     margin-bottom: 5px;
   }
 
+  /* Barra de navegación vertical ocupando todo el ancho */
   .nav-capsule {
     flex-direction: column;
     width: 100%;
@@ -589,46 +613,57 @@ main {
     gap: 10px;
   }
 
+  /* Botones ocultos por defecto (menú colapsado) */
   .nav-buttons {
-    display: none; /* Hidden by default */
+    display: none;
     flex-direction: column;
     width: 100%;
     gap: 10px;
     order: 2;
   }
 
+  /* Muestra los botones cuando el menú está activo */
   .nav-buttons.active {
     display: flex;
   }
 
+  /* Elementos del menú a ancho completo */
   .nav-btn,
   .search-box,
   .search-input {
     width: 100%;
   }
+
+  /* Texto de los botones centrado */
   .nav-btn {
     text-align: center;
   }
 
+  /* Buscador colocado al final del menú */
   .search-box {
     margin-top: 5px;
     order: 3;
   }
 
-  /* Shop Mobile */
+  /* --- TIENDA EN MÓVIL --- */
+
+  /* Oculta el logo en la página de tienda para ahorrar espacio */
   .page-shop .logo-circle {
     display: none;
   }
 
+  /* Layout de la tienda completamente vertical */
   .shop-layout {
     flex-direction: column;
-    height: auto; /* Allow full height */
+    height: auto;
   }
 
+  /* Sidebar a ancho completo */
   .sidebar {
     width: 100%;
   }
 
+  /* Contenedor del grid sin scroll interno */
   .shop-grid-container {
     overflow-y: visible;
     height: auto;
@@ -636,43 +671,56 @@ main {
     padding: 20px;
   }
 
+  /* Grid de productos en una sola columna */
   .shop-grid {
     grid-template-columns: 1fr;
     justify-items: center;
   }
 
-  /* Footer Mobile */
+  /* --- FOOTER EN MÓVIL --- */
+
+  /* Footer con altura automática */
   .footer-bar {
     height: auto;
     padding: 20px 0;
   }
 
+  /* Contenido del footer en columna y centrado */
   .footer-inner {
     flex-direction: column;
     gap: 15px;
     text-align: center;
-    background-color: var(--color-footer-bg); /* Or specific footer red */
+    background-color: var(--color-footer-bg);
     width: 100%;
   }
 
+  /* Sección central del footer visible y separada */
   .footer-center {
     display: block;
     margin: 10px 0;
   }
+
+  /* Iconos sociales centrados */
   .footer-right,
   .social-icons-footer {
     justify-content: center;
   }
 
-  /* Home Mobile */
+  /* --- HOME EN MÓVIL --- */
+
+  /* Reduce el tamaño del título principal */
   .welcome-container h1 {
     font-size: 2rem;
   }
+
+  /* Secciones principales apiladas en columna */
   .welcome-body,
   .map-layout {
     flex-direction: column;
     gap: 20px;
   }
+
+  /* Texto con ancho controlado para mejor lectura */
   .welcome-text p {
     width: 90%;
   }
