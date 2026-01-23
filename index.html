@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="es">
   <head>
     <meta charset="UTF-8" />
@@ -20,12 +20,15 @@
 
         <!-- Centro: Barra Roja (Buscador + Navegación) -->
         <div class="nav-capsule">
+          <button class="menu-toggle" id="menuToggle">
+            <i class="fas fa-bars"></i>
+          </button>
           <form class="search-box">
             <input type="text" class="search-input" placeholder="Buscador" />
             <i class="fas fa-search search-icon"></i>
           </form>
 
-          <nav class="nav-buttons">
+          <nav class="nav-buttons" id="navButtons">
             <a href="index.html" class="nav-btn">Tu Librería</a>
             <a href="tienda.html" class="nav-btn">Compra On-Line</a>
             <a href="#" class="nav-btn">Contacto</a>
@@ -233,7 +236,9 @@
           <i class="fab fa-instagram"></i>
           <i class="fab fa-tiktok"></i>
         </div>
-        <div class="footer-center"><u>Política de Privacidad</u> | <u>Cookies</u></div>
+        <div class="footer-center">
+          <u>Política de Privacidad</u> | <u>Cookies</u>
+        </div>
         <div class="footer-right">
           Fco. Javier Fdez <i class="fas fa-copyright"></i>
         </div>
@@ -256,7 +261,7 @@
       // Detectar interacción manual (tocar/clic) para pausar momentáneamente
       container.addEventListener("touchstart", () => (isHovering = true));
       container.addEventListener("touchend", () =>
-        setTimeout(() => (isHovering = false), 2000)
+        setTimeout(() => (isHovering = false), 2000),
       );
 
       function autoScroll() {
@@ -279,6 +284,16 @@
 
       // Iniciar
       autoScroll();
+
+      // Menu Toggle Logic
+      const menuToggle = document.getElementById("menuToggle");
+      const navButtons = document.getElementById("navButtons");
+
+      if (menuToggle && navButtons) {
+        menuToggle.addEventListener("click", () => {
+          navButtons.classList.toggle("active");
+        });
+      }
     </script>
   </body>
 </html>

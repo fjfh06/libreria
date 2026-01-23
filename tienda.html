@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="es">
   <head>
     <meta charset="UTF-8" />
@@ -11,17 +11,20 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
     />
   </head>
-  <body>
+  <body class="page-shop">
     <!-- CABECERA (Idéntica a Index - Sticky) -->
     <header>
       <div class="header-container">
         <div class="brand-name">AlmagaraBooks</div>
         <div class="nav-capsule">
+          <button class="menu-toggle" id="menuToggle">
+            <i class="fas fa-bars"></i>
+          </button>
           <form class="search-box">
             <input type="text" class="search-input" placeholder="Buscador" />
             <i class="fas fa-search search-icon"></i>
           </form>
-          <nav class="nav-buttons">
+          <nav class="nav-buttons" id="navButtons">
             <a href="index.html" class="nav-btn">Tu Librería</a>
             <a href="tienda.html" class="nav-btn">Compra On-Line</a>
             <a href="#" class="nav-btn">Contacto</a>
@@ -29,7 +32,7 @@
         </div>
         <!-- Derecha: Logo -->
         <div class="logo-circle">
-          <img width="50px" src="fotos/almagaraBooks.png" alt="AlmagaraBooks">
+          <img width="50px" src="fotos/almagaraBooks.png" alt="AlmagaraBooks" />
         </div>
       </div>
     </header>
@@ -71,10 +74,7 @@
           <div class="shop-grid">
             <!-- Lote 1 -->
             <article class="card">
-              <img
-                src="fotos/libro1.png"
-                alt="Libro 1"
-              />
+              <img src="fotos/libro1.png" alt="Libro 1" />
               <div class="card-title">Ciudad de Hueso</div>
               <div class="card-price-row">
                 <span class="price">15€</span>
@@ -82,10 +82,7 @@
               </div>
             </article>
             <article class="card">
-              <img
-                src="fotos/libro2.png"
-                alt="Libro 2"
-              />
+              <img src="fotos/libro2.png" alt="Libro 2" />
               <div class="card-title">Ciudad de Ceniza</div>
               <div class="card-price-row">
                 <span class="price">20€</span>
@@ -93,10 +90,7 @@
               </div>
             </article>
             <article class="card">
-              <img
-                src="fotos/libro3.png"
-                alt="Libro 3"
-              />
+              <img src="fotos/libro3.png" alt="Libro 3" />
               <div class="card-title">Ciudad de los Ángeles Caídos</div>
               <div class="card-price-row">
                 <span class="price">25€</span>
@@ -106,10 +100,7 @@
 
             <!-- Lote 2 -->
             <article class="card">
-              <img
-                src="fotos/libro1.png"
-                alt="Libro 1"
-              />
+              <img src="fotos/libro1.png" alt="Libro 1" />
               <div class="card-title">Ciudad de Hueso</div>
               <div class="card-price-row">
                 <span class="price">15€</span>
@@ -117,10 +108,7 @@
               </div>
             </article>
             <article class="card">
-              <img
-                src="fotos/libro2.png"
-                alt="Libro 2"
-              />
+              <img src="fotos/libro2.png" alt="Libro 2" />
               <div class="card-title">Ciudad de Ceniza</div>
               <div class="card-price-row">
                 <span class="price">20€</span>
@@ -128,10 +116,7 @@
               </div>
             </article>
             <article class="card">
-              <img
-                src="fotos/libro3.png"
-                alt="Libro 3"
-              />
+              <img src="fotos/libro3.png" alt="Libro 3" />
               <div class="card-title">Ciudad de los Ángeles Caídos</div>
               <div class="card-price-row">
                 <span class="price">25€</span>
@@ -141,10 +126,7 @@
 
             <!-- Lote 3 -->
             <article class="card">
-              <img
-                src="fotos/libro1.png"
-                alt="Libro 1"
-              />
+              <img src="fotos/libro1.png" alt="Libro 1" />
               <div class="card-title">Ciudad de Hueso</div>
               <div class="card-price-row">
                 <span class="price">15€</span>
@@ -152,10 +134,7 @@
               </div>
             </article>
             <article class="card">
-              <img
-                src="fotos/libro2.png"
-                alt="Libro 2"
-              />
+              <img src="fotos/libro2.png" alt="Libro 2" />
               <div class="card-title">Ciudad de Ceniza</div>
               <div class="card-price-row">
                 <span class="price">20€</span>
@@ -163,10 +142,7 @@
               </div>
             </article>
             <article class="card">
-              <img
-                src="fotos/libro3.png"
-                alt="Libro 3"
-              />
+              <img src="fotos/libro3.png" alt="Libro 3" />
               <div class="card-title">Ciudad de los Ángeles Caídos</div>
               <div class="card-price-row">
                 <span class="price">25€</span>
@@ -176,10 +152,7 @@
 
             <!-- Lote 4 -->
             <article class="card">
-              <img
-                src="fotos/libro1.png"
-                alt="Libro 1"
-              />
+              <img src="fotos/libro1.png" alt="Libro 1" />
               <div class="card-title">Ciudad de Hueso</div>
               <div class="card-price-row">
                 <span class="price">15€</span>
@@ -187,10 +160,7 @@
               </div>
             </article>
             <article class="card">
-              <img
-                src="fotos/libro2.png"
-                alt="Libro 2"
-              />
+              <img src="fotos/libro2.png" alt="Libro 2" />
               <div class="card-title">Ciudad de Ceniza</div>
               <div class="card-price-row">
                 <span class="price">20€</span>
@@ -198,10 +168,7 @@
               </div>
             </article>
             <article class="card">
-              <img
-                src="fotos/libro3.png"
-                alt="Libro 3"
-              />
+              <img src="fotos/libro3.png" alt="Libro 3" />
               <div class="card-title">Ciudad de los Ángeles Caídos</div>
               <div class="card-price-row">
                 <span class="price">25€</span>
@@ -224,11 +191,23 @@
           <i class="fab fa-instagram"></i>
           <i class="fab fa-tiktok"></i>
         </div>
-        <div class="footer-center"><u>Política de Privacidad</u> | <u>Cookies</u></div>
+        <div class="footer-center">
+          <u>Política de Privacidad</u> | <u>Cookies</u>
+        </div>
         <div class="footer-right">
           Fco. Javier Fdez <i class="fas fa-copyright"></i>
         </div>
       </div>
     </footer>
+    <script>
+      const menuToggle = document.getElementById("menuToggle");
+      const navButtons = document.getElementById("navButtons");
+
+      if (menuToggle && navButtons) {
+        menuToggle.addEventListener("click", () => {
+          navButtons.classList.toggle("active");
+        });
+      }
+    </script>
   </body>
 </html>
